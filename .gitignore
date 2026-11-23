@@ -4,3 +4,5 @@ __pycache__/
 .pytest_cache/
 *.json
 *.egg-info/
+.coverage
+.pytest_cache/
