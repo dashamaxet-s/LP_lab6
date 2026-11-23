@@ -27,7 +27,7 @@ jobs:
         run: mypy src
         
       - name: Tests (pytest + coverage)
-        run: pytest --cov=src --cov-fail-under=80
+        run: pytest --cov=src/api_service --cov-fail-under=80
         
       - name: Build Docker image
         run: docker build -t my-app:latest .

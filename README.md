@@ -77,3 +77,9 @@ pytest -v
 | GET    | `/items/{item_id}` | Get a single item | 200, 404 |
 | PUT    | `/items/{item_id}` | Update an item | 200, 404, 422 |
 | DELETE | `/items/{item_id}` | Delete an item | 204, 404 |
+
+## Docker
+
+Запуск приложения с базой данных одной командой:
+```bash
+docker compose up --build

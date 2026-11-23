@@ -25,7 +25,7 @@ class ItemRepository:
                     self._items[item.id] = item
                 if self._items:
                     self._next_id = max(self._items.keys()) + 1
-            except Exception as e:
+            except ValueError as e:
                 print(f"Error loading data: {e}")
 
     def _save(self) -> None:

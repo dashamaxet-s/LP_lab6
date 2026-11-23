@@ -1,8 +1,9 @@
 """Tests for the FastAPI application."""
 
+from pathlib import Path
+
 import pytest
 from fastapi.testclient import TestClient
-from pathlib import Path
 
 from api_service.app import app, repo
 
